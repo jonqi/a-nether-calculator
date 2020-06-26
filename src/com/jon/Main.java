@@ -5,13 +5,16 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-        while(true) {
-            print("\nInput scaanner coordinate.");
-            Scanner scaanner = new Scanner(System.in);
-            if (scaanner.hasNextDouble()) {
-                print("scaanner coordinate: " + scaanner.nextDouble());
-            } else {
-                print("Please enter a number.");
+        for (int i = 0; i < 3; i++) {
+            while (true) {
+                print("\nInput scanner coordinate.");
+                Scanner scanner = new Scanner(System.in);
+                if (scanner.hasNextDouble()) {
+                    print("scanner coordinate: " + scanner.nextDouble());
+                    break;
+                } else {
+                    print("Please enter a number.");
+                }
             }
         }
     }
